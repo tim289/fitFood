@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kvj-G5-dsy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2Ec-Ue-Mtj">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="nyq-i3-xyW">
+                            <view key="customView" contentMode="scaleToFill" id="Sxw-sR-95S">
+                                <rect key="frame" x="20" y="5" width="60" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="zVr-Ea-xBk">
+                            <rect key="frame" x="108" y="6" width="199" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLZ-9I-arq">
+                                    <rect key="frame" x="0.0" y="0.0" width="199" height="33"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_ic" translatesAutoresizingMaskIntoConstraints="NO" id="5Ky-4f-rXR">
+                                            <rect key="frame" x="57" y="-3" width="84" height="40"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="5Ky-4f-rXR" firstAttribute="centerX" secondItem="gLZ-9I-arq" secondAttribute="centerX" id="TaX-UQ-oss"/>
+                                        <constraint firstItem="5Ky-4f-rXR" firstAttribute="centerY" secondItem="gLZ-9I-arq" secondAttribute="centerY" id="obg-ST-a0G"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="gLZ-9I-arq" firstAttribute="top" secondItem="zVr-Ea-xBk" secondAttribute="top" id="CTh-Gn-xCq"/>
+                                <constraint firstItem="gLZ-9I-arq" firstAttribute="leading" secondItem="zVr-Ea-xBk" secondAttribute="leading" id="SwM-Ax-Jlj"/>
+                                <constraint firstAttribute="trailing" secondItem="gLZ-9I-arq" secondAttribute="trailing" id="bIY-Rl-tUa"/>
+                                <constraint firstAttribute="bottom" secondItem="gLZ-9I-arq" secondAttribute="bottom" id="phI-Kj-ax4"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="pVW-8E-eo2">
+                            <view key="customView" contentMode="scaleToFill" id="ct7-tJ-mHG">
+                                <rect key="frame" x="334" y="5" width="60" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basket_ic" translatesAutoresizingMaskIntoConstraints="NO" id="xzM-UK-TTe">
+                                        <rect key="frame" x="38" y="8" width="22" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="Ode-V6-4hj"/>
+                                            <constraint firstAttribute="height" constant="17" id="oqL-an-ozz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-9Q-NKQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="33"/>
+                                        <connections>
+                                            <action selector="openBasket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJ6-mg-JCq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lh1-9Q-NKQ" firstAttribute="top" secondItem="ct7-tJ-mHG" secondAttribute="top" id="FrL-EM-rP3"/>
+                                    <constraint firstItem="lh1-9Q-NKQ" firstAttribute="leading" secondItem="ct7-tJ-mHG" secondAttribute="leading" id="NyY-E2-Uvy"/>
+                                    <constraint firstAttribute="bottom" secondItem="lh1-9Q-NKQ" secondAttribute="bottom" id="Vse-WC-cv6"/>
+                                    <constraint firstAttribute="trailing" secondItem="xzM-UK-TTe" secondAttribute="trailing" id="tK4-jY-YLF"/>
+                                    <constraint firstAttribute="trailing" secondItem="lh1-9Q-NKQ" secondAttribute="trailing" id="wpG-gk-sCm"/>
+                                    <constraint firstItem="xzM-UK-TTe" firstAttribute="centerY" secondItem="ct7-tJ-mHG" secondAttribute="centerY" id="xmz-Of-Sh8"/>
+                                </constraints>
+                            </view>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="tRz-ip-v4i" kind="show" identifier="MyNutritionistViewControllerSegue" id="Ffy-10-xmY"/>
+                        <segue destination="5Kp-Ur-NE1" kind="show" identifier="BasketViewControllerSegue" id="MyD-IK-9cq"/>
+                        <segue destination="PVC-2d-4xC" kind="show" identifier="ReadyMealsViewControllerIdentifier" id="1PV-5I-JHC"/>
+                        <segue destination="QA5-zB-OtO" kind="show" identifier="MyOrdersViewControllerIdentifier" id="frT-ye-yIP"/>
+                        <segue destination="l4E-F5-yd5" kind="show" identifier="AboutAppViewControllerIdentifier" id="NjX-5n-TZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="350"/>
+        </scene>
+        <!--Мой диетолог-->
+        <scene sceneID="GgX-oM-hWv">
+            <objects>
+                <viewController id="tRz-ip-v4i" customClass="MyNutritionistViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Мой диетолог" id="GwW-G6-kRa"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRO-Db-yMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="839"/>
+        </scene>
+        <!--Ready Meals View Controller-->
+        <scene sceneID="oOq-mO-1Ga">
+            <objects>
+                <viewController id="PVC-2d-4xC" customClass="ReadyMealsViewController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZq-l6-ttd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="1271"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="US1-C6-PMS">
+            <objects>
+                <navigationController id="Kvj-G5-dsy" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hkg-l5-lA7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="laJ-P0-orK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EO4-iv-CiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119" y="350"/>
+        </scene>
+        <!--My Orders View Controller-->
+        <scene sceneID="FcF-k5-Hmq">
+            <objects>
+                <viewController id="QA5-zB-OtO" customClass="MyOrdersViewController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYo-Pr-fC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="-602"/>
+        </scene>
+        <!--About App View Controller-->
+        <scene sceneID="ZUf-Cj-JEj">
+            <objects>
+                <viewController id="l4E-F5-yd5" customClass="AboutAppViewController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtd-qC-eCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="-596"/>
+        </scene>
+        <!--Корзина-->
+        <scene sceneID="48J-f4-Pv2">
+            <objects>
+                <viewController id="5Kp-Ur-NE1" customClass="BasketViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Корзина" id="DV4-X2-ThQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTi-fE-aRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_ic" width="84" height="40"/>
+        <image name="basket_ic" width="140" height="100"/>
+    </resources>
+</document>

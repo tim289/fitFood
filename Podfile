@@ -1,0 +1,9 @@
+
+pod 'AFNetworking'
+
+pod 'UICollectionViewLeftAlignedLayout'
+
+
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TelephoneCollectionViewCellIdentifier" id="fHa-5y-LWd" customClass="TelephoneCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3o-po-3lP">
+                        <rect key="frame" x="8" y="56" width="444" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Tg8-D0-y8A"/>
+                        </constraints>
+                        <state key="normal" title="Телефон для справок: 8 (800) 456-56-65">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="telephoneButtonAction:" destination="fHa-5y-LWd" eventType="touchUpInside" id="ANj-Ak-RMB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="I3o-po-3lP" firstAttribute="leading" secondItem="fHa-5y-LWd" secondAttribute="leading" constant="8" id="DmU-zC-2pD"/>
+                <constraint firstAttribute="trailing" secondItem="I3o-po-3lP" secondAttribute="trailing" constant="8" id="N3Z-BW-kDO"/>
+                <constraint firstAttribute="bottom" secondItem="I3o-po-3lP" secondAttribute="bottom" constant="8" id="P9W-aB-1vW"/>
+            </constraints>
+            <size key="customSize" width="460" height="65"/>
+            <point key="canvasLocation" x="340" y="332"/>
+        </collectionViewCell>
+    </objects>
+</document>
